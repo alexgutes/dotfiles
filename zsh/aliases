@@ -1,0 +1,6 @@
+alias ls='ls -G'
+alias ll='ls -lahG'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+

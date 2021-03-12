@@ -1,4 +1,4 @@
-call plug#begin()
+call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
 Plug 'overcache/NeoSolarized'
 call plug#end()
 

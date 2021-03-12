@@ -1,6 +1,9 @@
-alias v='nvim'
-alias vcon='nvim ~/.config/nvim/init.vim'
-alias zcon='nvim ~/.zshrc'
-alias ls='ls -G'
-alias ll='ls -lahG'
+fpath=($ZDOTDIR/external $fpath)
 
+source "$XDG_CONFIG_HOME/zsh/aliases" 
+
+autoload -Uz prompt_purification_setup; prompt_purification_setup
+
+# Autocomplete hidden files
+_comp_options+=(globdots)
+source ~/dotfiles/zsh/external/completion.zsh
