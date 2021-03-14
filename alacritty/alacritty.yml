@@ -49,7 +49,7 @@ font:
 window:
   padding:
     x: 20
-    y: 20
+    y: 10
 
   decorations: None
 

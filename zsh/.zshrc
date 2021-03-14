@@ -22,5 +22,10 @@ bindkey -v
 export KEYTIMEOUT=1 
 autoload -Uz cursor_mode && cursor_mode
 
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
+
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
